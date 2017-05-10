@@ -1,5 +1,5 @@
 {
-    "name": "senorwesley/conditionalcasegit ",
+    "name": "senorwesley/conditionalcase",
     "description": "A small package for adding rules to things in Laravel",
     "type": "library",
     "license": "Beerware",
