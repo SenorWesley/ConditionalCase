@@ -34,7 +34,7 @@ class ActionMakeCommand extends GeneratorCommand
      *
      * @return string
      */
-    protected function getStub()
+    protected function getStub() : String
     {
         return __DIR__ . '/Stubs/action.stub';
     }
@@ -45,7 +45,7 @@ class ActionMakeCommand extends GeneratorCommand
      * @param  string  $name
      * @return string
      */
-    protected function getDefaultNamespace($rootNamespace)
+    protected function getDefaultNamespace($rootNamespace) : String
     {
         return 'App\Cases\Actions';
     }

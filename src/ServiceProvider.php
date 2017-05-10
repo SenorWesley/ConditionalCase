@@ -11,7 +11,7 @@ class ServiceProvider extends AbstractServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot() : Void
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
@@ -27,7 +27,7 @@ class ServiceProvider extends AbstractServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register() : Void
     {
         //
     }

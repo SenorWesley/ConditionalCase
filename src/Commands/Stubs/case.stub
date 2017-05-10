@@ -6,6 +6,7 @@ use SenorWesley\ConditionalCase\AbstractCase;
 
 class DummyClass extends AbstractCase
 {
+
     /**
      * Set conditions that apply to this case.
      *
