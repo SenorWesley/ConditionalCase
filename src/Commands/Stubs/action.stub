@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use SenorWesley\ConditionalCase\AbstractAction;
+
+class DummyClass extends AbstractAction
+{
+    /**
+     * Execute the action
+     */
+    public function handle() : Void
+    {
+        //
+    }
+}

@@ -1,0 +1,32 @@
+<?php
+
+namespace DummyNamespace;
+
+use SenorWesley\ConditionalCase\AbstractCondition;
+
+class DummyClass extends AbstractCondition
+{
+    /**
+     * Set the conditions the target has to meet before passing the test.
+     */
+    public function check() : Void
+    {
+        //
+    }
+
+    /**
+     * Set the actions to be executed when the target successfully passes all checks.
+     */
+    public function passed() : void
+    {
+        //
+    }
+
+    /**
+     * Set the actions to be executed when the target fails one or more checks.
+     */
+    public function failed() : void
+    {
+        //
+    }
+}

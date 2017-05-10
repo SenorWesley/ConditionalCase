@@ -1,0 +1,32 @@
+<?php
+
+namespace DummyNamespace;
+
+use SenorWesley\ConditionalCase\AbstractCase;
+
+class DummyClass extends AbstractCase
+{
+    /**
+     * Set conditions that apply to this case.
+     *
+     * @return array: An array of references to the conditions that apply.
+     */
+     public function conditions() : Array
+     {
+          return [
+              //
+          ];
+     }
+
+     /**
+      * Set actions that are to be executed
+      *
+      * @return array: An array of references to the actions that apply.
+      */
+     public function actions() : Array
+     {
+          return [
+               //
+          ];
+     }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "SenorWesley/ConditionalCase",
+    "description": "A small package for adding rules to things in Laravel",
+    "type": "library",
+    "license": "Beerware",
+    "authors": [
+        {
+            "name": "Wesley Peeters",
+            "email": "me@wesleypeeters.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
