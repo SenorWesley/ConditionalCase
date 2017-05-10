@@ -6,12 +6,23 @@ Abstract class AbstractCase
 {
     protected $target;
 
+    /**
+     * Set the target for this case.
+     *
+     * @param $target
+     * @return Void
+     */
     protected function setTarget($target) : Void
     {
         $this->target = $target;
     }
 
-    protected function getTarget() : Mixed
+    /**
+     * Get the target for this case.
+     *
+     * @return Mixed
+     */
+    public function getTarget()
     {
         return $this->target;
     }

@@ -4,6 +4,7 @@ namespace SenorWesley\ConditionalCase;
 
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
+use SenorWesley\ConditionalCase\Exceptions\ConditionsNotMetException;
 use SenorWesley\ConditionalCase\Exceptions\NoConditionsException;
 
 class ConditionalCase
@@ -12,12 +13,28 @@ class ConditionalCase
 
     private $case;
 
-
-    public function setCase(AbstractCase $case) : Void
+    public function __construct($case)
     {
         $this->case = new $case;
     }
 
+    /**
+     * Set the case we're handling
+     *
+     * @param AbstractCase $case
+     * @return Void
+     */
+    public function setCase($case) : Void
+    {
+        $this->case = new $case;
+    }
+
+    /**
+     * Check if the case checks all the correct boxes
+     *
+     * @return Bool
+     * @throws NoConditionsException
+     */
     private function check() : Bool {
         $conditions = $this->case->conditions();
 
@@ -38,12 +55,33 @@ class ConditionalCase
         throw new NoConditionsException();
     }
 
-    public function dispatch() : mixed
+    /**
+     * Fire all actions associated with a case if all conditions are met.
+     */
+    protected function fire()
     {
         $actions = $this->case->actions();
 
         foreach ($actions as $action) {
             $this->dispatch(new $action());
         }
+    }
+
+    /**
+     * Check if all conditions are met. If they are, fire all events. if they're not, throw an exception.
+     *
+     * @return Void
+     * @throws ConditionsNotMetException
+     * @throws NoConditionsException
+     */
+    public function handle() : Void
+    {
+        if ($this->check()) {
+            $this->fire();
+
+            return;
+        }
+        
+        throw new ConditionsNotMetException();
     }
 }
