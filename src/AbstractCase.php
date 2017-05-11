@@ -12,7 +12,7 @@ Abstract class AbstractCase
      * @param $target
      * @return Void
      */
-    protected function setTarget($target) : Void
+    protected function setTarget($target)
     {
         $this->target = $target;
     }

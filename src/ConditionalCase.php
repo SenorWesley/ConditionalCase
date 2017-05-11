@@ -28,7 +28,7 @@ class ConditionalCase
      * @return Bool
      * @throws NoConditionsException
      */
-    private function check() : Bool {
+    private function check() {
         $conditions = $this->case->conditions();
 
         
@@ -51,7 +51,7 @@ class ConditionalCase
     /**
      * Fire all actions associated with a case if all conditions are met.
      */
-    protected function fire() : Void
+    protected function fire()
     {
         $actions = $this->case->actions();
 
@@ -67,7 +67,7 @@ class ConditionalCase
      * @throws ConditionsNotMetException
      * @throws NoConditionsException
      */
-    public function handle() : Void
+    public function handle()
     {
         if ($this->check()) {
             $this->fire();

@@ -11,7 +11,7 @@ class ServiceProvider extends AbstractServiceProvider
      *
      * @return void
      */
-    public function boot() : Void
+    public function boot()
     {
         if ($this->app->runningInConsole()) {
             $this->commands([

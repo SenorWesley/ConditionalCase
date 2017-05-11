@@ -34,7 +34,7 @@ class CaseMakeCommand extends GeneratorCommand
      *
      * @return string
      */
-    protected function getStub() : String
+    protected function getStub()
     {
         return __DIR__ . '/Stubs/case.stub';
     }
@@ -45,7 +45,7 @@ class CaseMakeCommand extends GeneratorCommand
      * @param  string  $name
      * @return string
      */
-    protected function getDefaultNamespace($rootNamespace) : String
+    protected function getDefaultNamespace($rootNamespace)
     {
         return 'App\Cases';
     }

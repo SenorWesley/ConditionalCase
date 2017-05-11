@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade as AbstractFacade;
 
 class Facade extends AbstractFacade
 {
-    protected static function getFacadeAccessor() : String
+    protected static function getFacadeAccessor()
     {
         return 'ConditionalCase';
     }
