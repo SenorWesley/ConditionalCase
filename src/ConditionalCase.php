@@ -13,18 +13,11 @@ class ConditionalCase
 
     private $case;
 
-    public function __construct($case)
-    {
-        $this->case = new $case;
-    }
-
     /**
-     * Set the case we're handling
-     *
-     * @param AbstractCase $case
-     * @return Void
+     * ConditionalCase constructor.
+     * @param $case
      */
-    public function setCase($case) : Void
+    public function __construct($case)
     {
         $this->case = new $case;
     }
@@ -58,7 +51,7 @@ class ConditionalCase
     /**
      * Fire all actions associated with a case if all conditions are met.
      */
-    protected function fire()
+    protected function fire() : Void
     {
         $actions = $this->case->actions();
 

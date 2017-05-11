@@ -9,6 +9,11 @@
             "email": "me@wesleypeeters.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SenorWesley\\ConditionalCase\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "require": {
         "php": "7.1.*"

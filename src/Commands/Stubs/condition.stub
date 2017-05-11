@@ -9,7 +9,7 @@ class DummyClass extends AbstractCondition
     /**
      * Set the conditions the target has to meet before passing the test.
      */
-    public function check() : Void
+    public function check()
     {
         //
     }
@@ -17,7 +17,7 @@ class DummyClass extends AbstractCondition
     /**
      * Set the actions to be executed when the target successfully passes all checks.
      */
-    public function passed() : void
+    public function passed()
     {
         //
     }
@@ -25,7 +25,7 @@ class DummyClass extends AbstractCondition
     /**
      * Set the actions to be executed when the target fails one or more checks.
      */
-    public function failed() : void
+    public function failed()
     {
         //
     }

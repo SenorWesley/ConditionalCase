@@ -9,7 +9,7 @@ class DummyClass extends AbstractAction
     /**
      * Execute the action
      */
-    public function handle() : Void
+    public function handle()
     {
         //
     }

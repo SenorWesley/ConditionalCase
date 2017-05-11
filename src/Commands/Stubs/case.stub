@@ -12,7 +12,7 @@ class DummyClass extends AbstractCase
      *
      * @return array: An array of references to the conditions that apply.
      */
-     public function conditions() : Array
+     public function conditions()
      {
           return [
               //
@@ -24,7 +24,7 @@ class DummyClass extends AbstractCase
       *
       * @return array: An array of references to the actions that apply.
       */
-     public function actions() : Array
+     public function actions()
      {
           return [
                //
