@@ -27,7 +27,7 @@ class ServiceProvider extends AbstractServiceProvider
      *
      * @return void
      */
-    public function register() : Void
+    public function register()
     {
         //
     }
