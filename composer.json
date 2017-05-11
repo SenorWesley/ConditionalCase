@@ -14,8 +14,5 @@
             "SenorWesley\\ConditionalCase\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.0"
-    }
+    "minimum-stability": "dev"
 }
